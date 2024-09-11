@@ -1,3 +1,7 @@
+# Spiros-Portfolio
+
+Spiros Portfolio: This project is a comprehensive display of my web development projects and experience , built using Next.js(ideas for extending it thats why) and React. Designed to showcase my abilities to potential employers and collaborators, it features a clean, responsive design.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
