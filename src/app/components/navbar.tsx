@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex-initial">
-            <button className="text-white bg-purple-700 hover:bg-purple-800 font-medium py-2 px-4 rounded-lg">
+            <button className="text-white bg-blue-950 hover:bg-blue-950 font-medium py-2 px-4 rounded-lg">
               Contact Me
             </button>
           </div>
