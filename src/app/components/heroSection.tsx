@@ -1,5 +1,6 @@
 import React from "react";
-import PreviewControl from "./PreviewControl";
+import PreviewModal from "./PreviewModal";
+
 const HeroSection: React.FC = () => {
   const documentUrl = "/assets/Resume-SpyrosDoukeris.pdf";
 
@@ -13,8 +14,8 @@ const HeroSection: React.FC = () => {
           I'm Spiros, a student at the University of Crete with a passion for
           web development.
         </p>
-        <div className="flex items-center space-x-4">
-          <button className="mt-8 bg-white text-gray-900 rounded-full px-6 py-2 font-semibold hover:bg-gray-200 transition duration-300">
+        <div className="flex items-center space-x-4 mt-12">
+          <button className=" bg-white text-gray-900 rounded-full px-6 py-2 font-semibold hover:bg-gray-200 transition duration-300">
             <a
               href="/assets/Resume-SpyrosDoukeris.pdf"
               download="Resume-SpyrosDoukeris.pdf"
@@ -22,7 +23,7 @@ const HeroSection: React.FC = () => {
               Download CV
             </a>
           </button>
-          <PreviewControl document={documentUrl} />
+          <PreviewModal document={documentUrl} />
         </div>
       </div>
 
