@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              className="h-12 w-auto"
+              src="images/signature2.png"
               alt="Your Company Logo"
             />
           </div>

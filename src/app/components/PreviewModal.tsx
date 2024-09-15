@@ -30,16 +30,16 @@ const PreviewModal: React.FC<{ document: string }> = ({ document }) => {
         color="primary"
         onClick={handleOpen}
         sx={{
-          fontSize: "0.75rem", // Smaller font size for the text
-          display: "flex", // Align icon and text horizontally
+          fontSize: "0.75rem",
+          display: "flex",
           alignItems: "center",
-          textTransform: "none", // Keep normal casing
-          padding: "0", // Reduce padding for a more compact look
+          textTransform: "none",
+          padding: "0",
           "&:hover": {
-            backgroundColor: "transparent", // Disable hover background effect
+            backgroundColor: "transparent",
           },
         }}
-        startIcon={<VisibilityIcon sx={{ fontSize: "1.1rem" }} />} // Preview icon (smaller size)
+        startIcon={<VisibilityIcon sx={{ fontSize: "1.1rem" }} />}
       >
         Preview CV
       </Button>
