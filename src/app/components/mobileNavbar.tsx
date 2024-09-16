@@ -62,7 +62,7 @@ const MobileNavbar: React.FC = () => {
           <div className="px-4 py-2 space-y-1">
             <a
               href="#about"
-              className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               onClick={toggleMenu}
             >
               About
@@ -75,11 +75,11 @@ const MobileNavbar: React.FC = () => {
               Experience
             </a>
             <a
-              href="#skills"
+              href="#projects"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               onClick={toggleMenu}
             >
-              Skills
+              Projects
             </a>
             <a
               href="#courses"

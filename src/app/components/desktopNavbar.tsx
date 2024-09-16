@@ -27,25 +27,25 @@ const Navbar: React.FC = () => {
             <div className="flex space-x-4">
               <a
                 href="#about"
-                className="rounded-md  px-3 py-2 text-sm font-medium text-white"
+                className="rounded-md  px-3 py-2 text-sm font-medium text-gray-300"
               >
                 About
               </a>
               <a
                 href="#experience"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
+                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300"
               >
                 Experience
               </a>
               <a
-                href="#skills"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
+                href="#projects"
+                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300"
               >
-                Skills
+                Projects
               </a>
               <a
                 href="#courses"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
+                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300"
               >
                 Courses
               </a>

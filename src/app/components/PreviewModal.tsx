@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Button, IconButton, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -19,8 +19,13 @@ const style = {
 
 const PreviewModal: React.FC<{ document: string }> = ({ document }) => {
   const [open, setOpen] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
-  const handleOpen = () => setOpen(true);
+  const handleOpen = () => {
+    setOpen(true);
+    setIframeLoaded(true);
+  };
+
   const handleClose = () => setOpen(false);
 
   return (
@@ -63,13 +68,16 @@ const PreviewModal: React.FC<{ document: string }> = ({ document }) => {
           >
             <CloseIcon />
           </IconButton>
-          <iframe
-            src={document}
-            title="Resume Preview"
-            width="100%"
-            height="100%"
-            style={{ border: "none" }}
-          ></iframe>
+
+          {iframeLoaded && (
+            <iframe
+              src={document}
+              title="Resume Preview"
+              width="100%"
+              height="100%"
+              style={{ border: "none" }}
+            ></iframe>
+          )}
         </Box>
       </Modal>
     </>

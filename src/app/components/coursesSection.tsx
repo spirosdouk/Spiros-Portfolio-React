@@ -2,12 +2,12 @@ import React from "react";
 
 const CoursesSection: React.FC = () => {
   return (
-    <section id="courses" className=" text-white  px-4 ">
+    <section id="courses" className="text-white px-4 lg:px-12 pt-14 lg:pt-24">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl lg:text-3xl font-bold text-center py-4 pt-9">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center lg:py-4 ">
           Courses
         </h2>
-        <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700">
+        <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700 ">
           <li className="mb-10 ml-4 flex">
             <div className="absolute w-3 h-3 bg-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
             <img
