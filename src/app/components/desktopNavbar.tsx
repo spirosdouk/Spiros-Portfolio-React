@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0">
             <img
               className="h-12 w-auto"
-              src="images/signature2.png"
+              src="images/logosign.png"
               alt="Your Company Logo"
             />
           </div>

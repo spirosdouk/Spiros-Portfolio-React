@@ -9,7 +9,7 @@ import {
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section id="projects" className="text-white px-4 lg:px-12 pt-14 lg:pt-24">
+    <section id="projects" className="text-white px-4 lg:px-12 pt-14 lg:pt-18">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl lg:text-3xl font-bold text-center lg:py-4 ">
           Some Of My Projects
@@ -58,7 +58,7 @@ const ProjectsSection: React.FC = () => {
           <div className="project-card rounded-lg p-6 shadow-lg">
             <div className="mb-7">
               <img
-                src="/images/recipesapp3.png"
+                src="/images/recipesapp.png"
                 alt="RecipeSharing App Screenshot"
                 className="rounded-lg w-full h-auto object-cover"
               />

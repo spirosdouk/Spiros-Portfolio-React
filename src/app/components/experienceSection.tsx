@@ -25,7 +25,7 @@ const ExperienceSection: React.FC = () => {
                 Leading innovative projects with cutting-edge technologies.
               </p>
             </div>
-          </li>{" "}
+          </li>
           <li className="mb-10 ml-4 flex">
             <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
             <img
