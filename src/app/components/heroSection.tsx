@@ -1,12 +1,11 @@
 import React from "react";
-import PreviewModal from "./PreviewModal";
+import PreviewModal from "./previewModal";
 
 const HeroSection: React.FC = () => {
   const documentUrl = "/assets/Resume-SpyrosDoukeris.pdf";
 
   return (
-    <div className="mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-48 py-14 lg:py-24 space-y-8 lg:space-y-0">
-      {/* Profile Section for Small Devices */}
+    <div className="mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-48 py-24 space-y-8 lg:space-y-0">
       <div className="lg:hidden flex flex-col items-center w-full mb-8">
         <div className="w-56 h-56 bg-white rounded-full overflow-hidden">
           <img

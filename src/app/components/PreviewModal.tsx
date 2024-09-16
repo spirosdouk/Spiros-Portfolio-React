@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Box, Button, IconButton, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import VisibilityIcon from "@mui/icons-material/Visibility"; // Importing preview icon
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const style = {
   position: "absolute" as "absolute",
