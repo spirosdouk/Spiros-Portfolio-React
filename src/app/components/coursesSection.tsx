@@ -22,7 +22,7 @@ const CoursesSection: React.FC = () => {
               <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
                 Code With Mosh
               </p>
-              <h3 className="text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
                 Clean Coding and Refactoring
               </h3>
             </div>
@@ -40,7 +40,7 @@ const CoursesSection: React.FC = () => {
               <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
                 Code With Mosh
               </p>
-              <h3 className="text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
                 React 18: for Beginners
               </h3>
             </div>
@@ -58,7 +58,7 @@ const CoursesSection: React.FC = () => {
               <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
                 Code With Mosh
               </p>
-              <h3 className="text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
                 React 18: Intermediate Topics
               </h3>
             </div>
@@ -86,7 +86,7 @@ const CoursesSection: React.FC = () => {
                 <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
                   Udemy
                 </p>
-                <h3 className="text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
                   Javascript Essentials
                 </h3>
               </div>
@@ -105,7 +105,7 @@ const CoursesSection: React.FC = () => {
               <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
                 Code With Mosh
               </p>
-              <h3 className="text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
                 The Ultimate Git Course
               </h3>
             </div>

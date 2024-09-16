@@ -17,6 +17,7 @@ const HeroSection: React.FC = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover object-center"
               priority
+              quality={100}
             />
           </div>
           <div className="text-center mt-4">
@@ -83,14 +84,20 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="hidden lg:flex flex-col items-center">
-          <div className="w-80 h-80 bg-white rounded-full overflow-hidden mb-4">
-            <Image
-              src="/images/profile.png"
-              alt="Spiros Doukeris"
-              width={320}
-              height={320}
-              className="object-cover object-center w-full h-full"
-            />
+          <div className="hidden lg:flex flex-col items-center">
+            <div className="hidden lg:flex flex-col items-center">
+              <div className="w-80 h-80 rounded-full overflow-hidden mb-4 relative">
+                <Image
+                  src="/images/profile.png"
+                  alt="Spiros Doukeris"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 320px"
+                  className="object-cover"
+                  priority
+                  quality={100}
+                />
+              </div>
+            </div>
           </div>
           <div className="text-center">
             <p className="text-white text-lg font-semibold">Spiros Doukeris</p>
