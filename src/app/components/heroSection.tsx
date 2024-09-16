@@ -1,5 +1,5 @@
 import React from "react";
-import PreviewModal from "./previewModal";
+import PreviewModal from "./previewModals";
 
 const HeroSection: React.FC = () => {
   const documentUrl = "/assets/Resume-SpyrosDoukeris.pdf";
