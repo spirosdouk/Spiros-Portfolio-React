@@ -14,15 +14,15 @@ const ContactFormSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="sm:hidden mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 py-14 lg:py-24 space-y-8 lg:space-y-0"
+      className="lg:hidden mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 py-14 lg:py-24 space-y-8 lg:space-y-0"
     >
       <div className="max-w-lg w-full lg:w-1/2">
         <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
           Get in Touch
         </h2>
         <p className="text-gray-300 mb-8">
-          If you'd like to discuss a project, a job oportunity or just want to
-          say hi, feel free to drop me a message.
+          If you&apos;d like to discuss a project, a job opportunity, or just
+          want to say hi, feel free to drop me a message.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">

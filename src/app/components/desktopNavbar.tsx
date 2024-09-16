@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import ContactFormModal from "./contactMeDesktop";
+import Image from "next/image";
+
 const Navbar: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -10,16 +12,20 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="hidden sm:block fixed top-0 left-0 w-full z-50 bg-black shadow-lg"
+      className="hidden lg:block fixed top-0 left-0 w-full z-50 bg-black shadow-lg"
       style={{ backgroundColor: "var(--background)" }}
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <img
-              className="h-12 w-auto"
-              src="images/logosign.png"
+            <Image
+              src="/images/logosign.png"
               alt="Your Company Logo"
+              width={192}
+              height={48}
+              className="h-12 w-auto"
+              quality={100}
+              priority
             />
           </div>
 

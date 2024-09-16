@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaAngular, FaBootstrap, FaReact } from "react-icons/fa";
 import {
   SiTypescript,
@@ -18,9 +19,11 @@ const ProjectsSection: React.FC = () => {
         <div className="pt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
           <div className="project-card rounded-lg p-6 shadow-lg">
             <div className="mb-4">
-              <img
+              <Image
                 src="/images/gamelib.png"
                 alt="GameHub Screenshot"
+                width={800} // Define the width
+                height={450} // Define the height
                 className="rounded-lg w-full h-auto object-cover"
               />
             </div>
@@ -55,11 +58,14 @@ const ProjectsSection: React.FC = () => {
               </a>
             </div>
           </div>
+
           <div className="project-card rounded-lg p-6 shadow-lg">
             <div className="mb-7">
-              <img
+              <Image
                 src="/images/recipesapp.png"
                 alt="RecipeSharing App Screenshot"
+                width={800} // Define the width
+                height={450} // Define the height
                 className="rounded-lg w-full h-auto object-cover"
               />
             </div>

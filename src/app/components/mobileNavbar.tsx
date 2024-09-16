@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const MobileNavbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +12,19 @@ const MobileNavbar: React.FC = () => {
 
   return (
     <nav
-      className="fixed sm:hidden top-0 left-0 w-full z-50 bg-black shadow-lg"
+      className="fixed lg:hidden top-0 left-0 w-full z-50 bg-black shadow-lg"
       style={{ backgroundColor: "var(--background)" }}
     >
       <div className="relative flex items-center justify-between h-16">
         <div className="flex-shrink-0">
-          <img
-            className="h-12 w-auto"
-            src="images/logosign.png"
+          <Image
+            src="/images/logosign.png"
             alt="Your Company Logo"
+            width={192}
+            height={48}
+            className="h-12 w-auto"
+            quality={100}
+            priority
           />
         </div>
 
