@@ -8,7 +8,48 @@ const ExperienceSection: React.FC = () => {
         </h2>
         <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700">
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 bg-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <img
+              src="/images/logicea_logo.png"
+              alt="Company Logo"
+              className="w-12 h-12 mt-1 mr-4"
+            />
+            <div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                September 2024 - Currently
+              </time>
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
+                (FullTime) Front End Developer (React/React Native) at Logicea
+              </h3>
+              <p className="text-sm lg:text-base font-normal text-gray-500 dark:text-gray-400">
+                Leading innovative projects with cutting-edge technologies.
+              </p>
+            </div>
+          </li>
+          <li className="mb-10 ml-4 flex">
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <img
+              src="/images/forth_logo.png"
+              alt="Company Logo"
+              className="w-12 h-12 mt-1 mr-4"
+            />
+            <div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                October 2024 - July 2025
+              </time>
+              <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
+                (Scholarship) Undergraduate Scholar, Human-Computer Interaction
+                (HCI) Lab
+              </h3>
+              <p className="text-sm lg:text-base font-normal text-gray-500 dark:text-gray-400">
+                Participated in projects focused on enhancing user interaction
+                with computing technologies, aligning with the institute’s
+                strategic objectives.
+              </p>
+            </div>
+          </li>
+          <li className="mb-10 ml-4 flex">
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
             <img
               src="/images/logicea_logo.png"
               alt="Company Logo"
@@ -42,7 +83,8 @@ const ExperienceSection: React.FC = () => {
                 Science
               </h3>
               <p className="text-sm lg:text-base font-normal text-gray-500 dark:text-gray-400">
-                Leading innovative projects with cutting-edge technologies.
+                Focused on computing technology research and innovative project
+                participation.
               </p>
             </div>
           </li>
@@ -58,11 +100,12 @@ const ExperienceSection: React.FC = () => {
                 June 2023 - July 2023
               </time>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
-                (Summer Internship) χρήση δικτυών RDMA σε σύστημα Δεδομένων
-                Key_Values Stores
+                (Summer Internship) Summer Internship utilizing RDMA networks in
+                Key-Value Data Store Systems
               </h3>
               <p className="text-sm lg:text-base font-normal text-gray-500 dark:text-gray-400">
-                Leading innovative projects with cutting-edge technologies.
+                Engaged in key-value data storage optimization techniques
+                through RDMA network technology.
               </p>
             </div>
           </li>

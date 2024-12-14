@@ -10,7 +10,7 @@ const CoursesSection: React.FC = () => {
         </h2>
         <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700 ">
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 bg-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
             <Image
               src="/images/codewithmosh_logo.png"
               alt="Company Logo"

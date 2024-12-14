@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000; 
-  --foreground: #ffffff; 
+  --background: #000000;
+  --foreground: #ffffff;
+  --dark-grey: #1f2937;
 }
 
 html,
@@ -34,6 +35,20 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: light; 
+    color-scheme: light;
   }
+}
+
+@keyframes flashColor {
+  0%,
+  100% {
+    background-color: #5a67d8;
+  }
+  50% {
+    background-color: var(--dark-grey);
+  }
+}
+
+.flash-effect {
+  animation: flashColor 2s infinite;
 }
