@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import HeroSection from "./components/heroSection";
-import ExperienceSection from "./components/experienceSection";
-import CoursesSection from "./components/coursesSection";
-import DesktopNavbar from "./components/desktopNavbar";
-import MobileNavbar from "./components/mobileNavbar";
 import ContactFormSection from "./components/contactMeMobile";
+import CoursesSection from "./components/coursesSection";
+import ExperienceSection from "./components/experienceSection";
+import HeroSection from "./components/heroSection";
+import DesktopNavbar from "./components/navbar/desktopNavbar";
+import MobileNavbar from "./components/navbar/mobileNavbar";
 import ProjectSection from "./components/projectSection";
 
 export const metadata: Metadata = {
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
       "Discover the projects and technical skills of Spiros Doukeris on his official portfolio website.",
     images: [
       {
-        url: "http://yourdomain.com/images/profile.png",
+        url: "https://spiros-portfolio.vercel.app/images/profile.png",
         width: 800,
         height: 600,
-        alt: "A descriptive alternative text for your image",
+        alt: "",
       },
     ],
-    url: "https://yourdomain.com",
+    url: "https://spiros-portfolio.vercel.app/",
   },
   keywords: [
     "frontend development",
@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "Spiros Doukeris",
     "Computer Science Under-Graduate",
     "Computer Science",
+    "React",
+    "Next.js",
+    "TypeScript",
   ],
 };
 
