@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Logo from "../shared/logo";
-import ContactFormModal from "../contactMeDesktop";
+import ContactFormModal from "../contact/ContactMeDesktop";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

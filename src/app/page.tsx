@@ -1,11 +1,11 @@
 import { Metadata } from "next";
-import ContactFormSection from "./components/contactMeMobile";
-import CoursesSection from "./components/coursesSection";
-import ExperienceSection from "./components/experienceSection";
-import HeroSection from "./components/heroSection";
-import DesktopNavbar from "./components/navbar/desktopNavbar";
-import MobileNavbar from "./components/navbar/mobileNavbar";
-import ProjectSection from "./components/projectSection";
+import ContactFormSection from "./components/contact/ContactMeMobile";
+import CoursesSection from "./components/courses/CoursesSection";
+import ExperienceSection from "./components/experience/ExperienceSection";
+import HeroSection from "./components/hero/HeroSection";
+import ProjectSection from "./components/projects/ProjectSection";
+import DesktopNavbar from "./components/navbar/DesktopNavbar";
+import MobileNavbar from "./components/navbar/MobileNavbar";
 
 export const metadata: Metadata = {
   title: "Spiros Doukeris - Front End Developer Portfolio",

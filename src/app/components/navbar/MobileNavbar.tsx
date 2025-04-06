@@ -25,7 +25,6 @@ const MobileNavbar: React.FC = () => {
     >
       <div className="relative flex items-center justify-between h-16">
         <Logo />
-
         <button
           onClick={toggleMenu}
           className="text-gray-400 hover:text-white focus:outline-none mr-10"

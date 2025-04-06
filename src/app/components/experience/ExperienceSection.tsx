@@ -1,5 +1,5 @@
 import React from "react";
-const ExperienceSection: React.FC = () => {
+const ExperienceSection = () => {
   return (
     <section id="experience" className=" text-white  px-4">
       <div className="max-w-5xl mx-auto">
