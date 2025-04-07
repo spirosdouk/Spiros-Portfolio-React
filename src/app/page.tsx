@@ -3,9 +3,9 @@ import ContactFormSection from "./components/contact/ContactMeMobile";
 import CoursesSection from "./components/courses/CoursesSection";
 import ExperienceSection from "./components/experience/ExperienceSection";
 import HeroSection from "./components/hero/HeroSection";
-import ProjectSection from "./components/projects/ProjectSection";
 import DesktopNavbar from "./components/navbar/DesktopNavbar";
 import MobileNavbar from "./components/navbar/MobileNavbar";
+import ProjectSection from "./components/projects/ProjectSection";
 
 export const metadata: Metadata = {
   title: "Spiros Doukeris - Front End Developer Portfolio",

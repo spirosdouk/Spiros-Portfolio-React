@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import PreviewModal from "../cv/PreviewModals";
+import PreviewModal from "./PreviewModals";
+import ProfileImage from "./Profileimage";
 
 const HeroSection = () => {
   const documentUrl = "/assets/Resume-SpyrosDoukeris.pdf";
@@ -8,17 +9,10 @@ const HeroSection = () => {
   return (
     <section id="about">
       <div className="mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-48 py-24 space-y-8 lg:space-y-0">
+        {/* Mobile Profile Section */}
         <div className="lg:hidden flex flex-col items-center w-full mb-8">
           <div className="w-56 h-56 bg-white rounded-full overflow-hidden relative">
-            <Image
-              src="/images/profile.png"
-              alt="Spiros Doukeris"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover object-center"
-              priority
-              quality={100}
-            />
+            <ProfileImage sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
           <div className="text-center mt-4">
             <div className="text-center mt-4">
@@ -41,7 +35,6 @@ const HeroSection = () => {
                   alt="LinkedIn"
                   width={24}
                   height={24}
-                  style={{ width: "auto", height: "auto" }}
                 />
               </a>
               <a
@@ -87,15 +80,7 @@ const HeroSection = () => {
           <div className="hidden lg:flex flex-col items-center">
             <div className="hidden lg:flex flex-col items-center">
               <div className="w-80 h-80 rounded-full overflow-hidden mb-4 relative">
-                <Image
-                  src="/images/profile.png"
-                  alt="Spiros Doukeris"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 320px"
-                  className="object-cover"
-                  priority
-                  quality={100}
-                />
+                <ProfileImage sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 320px" />
               </div>
             </div>
           </div>
@@ -114,7 +99,6 @@ const HeroSection = () => {
                   alt="LinkedIn"
                   width={32}
                   height={32}
-                  style={{ width: "auto", height: "auto" }}
                 />
               </a>
               <a href="https://github.com/spirosdouk" target="_blank">

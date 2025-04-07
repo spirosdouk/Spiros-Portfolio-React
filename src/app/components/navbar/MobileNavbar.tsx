@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Logo from "../shared/logo";
 
-const MobileNavbar: React.FC = () => {
+const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

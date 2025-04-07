@@ -30,14 +30,15 @@ const ContactFormSection: React.FC = () => {
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-1">
               Email Address
+              <input
+                id="email"
+                type="email"
+                name="email"
+                autoComplete="on"
+                required
+                className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              />
             </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
             <ValidationError
               prefix="Email"
               field="email"
@@ -49,14 +50,15 @@ const ContactFormSection: React.FC = () => {
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-1">
               Message
+              <textarea
+                id="message"
+                name="message"
+                autoComplete="on"
+                required
+                className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                rows={4}
+              ></textarea>
             </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              rows={4}
-            ></textarea>
             <ValidationError
               prefix="Message"
               field="message"

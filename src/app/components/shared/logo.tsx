@@ -7,9 +7,9 @@ const Logo = () => (
       alt="Logo"
       width={192}
       height={48}
-      className="h-12 w-auto"
       quality={100}
       priority
+      style={{ width: "192px", height: "48px" }}
     />
   </div>
 );
