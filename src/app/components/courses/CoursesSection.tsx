@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CoursesSection: React.FC = () => {
+const CoursesSection = () => {
   return (
     <section id="courses" className="text-white px-4 lg:px-12 pt-14 lg:pt-18">
       <div className="max-w-5xl mx-auto">

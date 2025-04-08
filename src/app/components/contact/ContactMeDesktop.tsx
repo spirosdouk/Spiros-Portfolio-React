@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -41,6 +42,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
                 id="email"
                 type="email"
                 name="email"
+                autoComplete="email"
                 required
                 className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
               />
@@ -59,6 +61,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
               <textarea
                 id="message"
                 name="message"
+                autoComplete="on"
                 required
                 className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                 rows={4}

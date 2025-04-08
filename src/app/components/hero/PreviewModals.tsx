@@ -18,7 +18,11 @@ const style = {
   overflow: "auto",
 };
 
-const PreviewModal: React.FC<{ document: string }> = ({ document }) => {
+interface PreviewModalProps {
+  document: string | undefined;
+}
+
+const PreviewModal = ({ document }: PreviewModalProps) => {
   const [open, setOpen] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
 

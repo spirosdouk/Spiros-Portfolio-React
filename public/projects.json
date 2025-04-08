@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gamehub",
+    "title": "GameHub",
+    "description": "A video game discovery app that helps you find new and interesting games to play.",
+    "imageUrl": "/images/gamelib.png",
+    "imageAlt": "GameHub Screenshot",
+    "techStack": ["react", "typescript", "chakraui", "vercel"],
+    "liveDemoUrl": "https://game-hub-pi-blue-85.vercel.app",
+    "githubUrl": "https://github.com/spirosdouk/GameLib-hub"
+  },
+  {
+    "id": "recipes",
+    "title": "RecipeSharing Platform",
+    "description": "A web app for sharing and discovering recipes based on dietary preferences, cuisine, and available ingredients.",
+    "imageUrl": "/images/recipesapp.png",
+    "imageAlt": "RecipeSharing App Screenshot",
+    "techStack": ["angular", "typescript", "bootstrap"],
+    "liveDemoUrl": null,
+    "githubUrl": "https://github.com/spirosdouk/RecipeSharing-App"
+  },
+  {
+    "id": "unityrunner",
+    "title": "Unity Runner Game",
+    "description": "A fast-paced runner game developed using Unity and deployed as a WebGL application. Navigate through obstacles, collect power-ups, and achieve high scores!",
+    "imageUrl": "/images/runnersgame.png",
+    "imageAlt": "Unity Runner Game Screenshot",
+    "techStack": ["unity", "csharp"],
+    "liveDemoUrl": "https://spirosdouk.github.io/runner-game/",
+    "githubUrl": "https://github.com/spirosdouk/runner-game"
+  }
+]
