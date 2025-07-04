@@ -32,7 +32,7 @@ const HeroSection = () => {
               >
                 <Image
                   src="/icons/LI-In-Bug.png"
-                  alt="LinkedIn"
+                  alt="Spiros Doukeris LinkedIn Profile"
                   width={24}
                   height={24}
                 />
@@ -44,7 +44,7 @@ const HeroSection = () => {
               >
                 <Image
                   src="/icons/github-mark-white.svg"
-                  alt="GitHub"
+                  alt="Spiros Doukeris GitHub Profile"
                   width={22}
                   height={22}
                 />
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         <div className="max-w-lg">
           <h1 className="text-2xl lg:text-4xl font-bold leading-tight">
-            Hey, I&apos;m an aspiring Front End Developer.
+            Hey, I&apos;m an aspiring Frontend Developer.
           </h1>
           <p className="mt-2 text-gray-300">
             I&apos;m Spiros, a student at the University of Crete with a passion
@@ -93,18 +93,23 @@ const HeroSection = () => {
               <a
                 href="https://linkedin.com/in/spyros-doukeris-856bb7288"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Image
                   src="/icons/LI-In-Bug.png"
-                  alt="LinkedIn"
+                  alt="Spiros Doukeris LinkedIn Profile"
                   width={32}
                   height={32}
                 />
               </a>
-              <a href="https://github.com/spirosdouk" target="_blank">
+              <a
+                href="https://github.com/spirosdouk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/icons/github-mark-white.svg"
-                  alt="GitHub"
+                  alt="Spiros Doukeris GitHub Profile"
                   width={28}
                   height={28}
                 />

@@ -6,21 +6,22 @@ import HeroSection from "./components/hero/HeroSection";
 import DesktopNavbar from "./components/navbar/DesktopNavbar";
 import MobileNavbar from "./components/navbar/MobileNavbar";
 import ProjectSection from "./components/projects/ProjectSection";
+import StructuredData from "./components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Spiros Doukeris - Front End Developer Portfolio",
+  title: "Spiros Doukeris - Frontend Developer Portfolio",
   description:
-    "Explore the portfolio of Spiros Doukeris, a dedicated Front End Developer showcasing his journey.",
+    "Explore the portfolio of Spiros Doukeris, a dedicated Frontend Developer showcasing his journey from Computer Science student to professional developer at Logicea.",
   openGraph: {
-    title: "Spiros Doukeris - Front End Developer",
+    title: "Spiros Doukeris - Frontend Developer",
     description:
-      "Discover the projects and technical skills of Spiros Doukeris on his official portfolio website.",
+      "Discover the projects and technical skills of Spiros Doukeris on his official portfolio website. Featuring React, Next.js, TypeScript, and Unity projects.",
     images: [
       {
         url: "https://spiros-portfolio.vercel.app/images/profile.png",
         width: 800,
         height: 600,
-        alt: "",
+        alt: "Spiros Doukeris - Frontend Developer Profile Picture",
       },
     ],
     url: "https://spiros-portfolio.vercel.app/",
@@ -35,12 +36,21 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "TypeScript",
+    "Logicea",
+    "University of Crete",
+    "React Native",
+    "Angular",
+    "Unity",
+    "C#",
+    "JavaScript",
+    "Full Stack Developer",
   ],
 };
 
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <DesktopNavbar />
       <MobileNavbar />
       <HeroSection />

@@ -12,7 +12,10 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    formats: ["image/webp", "image/avif"],
   },
+  compress: true,
+  poweredByHeader: false,
   webpack: (config, { isServer, webpack }) => {
     if (!isServer) {
       config.resolve.alias["@emotion/react"] = path.resolve(
