@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <section id="about">
-      <div className="mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-48 py-24 space-y-8 lg:space-y-0">
+      <div className="mx-auto max-w-7xl text-primary flex flex-col lg:flex-row items-center justify-between px-4 lg:px-48 py-24 space-y-8 lg:space-y-0">
         {/* Mobile Profile Section */}
         <div className="lg:hidden flex flex-col items-center w-full mb-8">
           <div className="w-56 h-56 bg-white rounded-full overflow-hidden relative">
@@ -85,7 +85,9 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="text-center">
-            <p className="text-white text-lg font-semibold">Spiros Doukeris</p>
+            <p className="text-primary text-lg font-semibold">
+              Spiros Doukeris
+            </p>
             <h3 className="text-sm font-normal lg:text-lg mb-4 text-gray-400 dark:text-gray-500">
               Computer Science Under-Graduate
             </h3>

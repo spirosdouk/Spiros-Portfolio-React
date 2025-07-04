@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --dark-grey: #1f2937;
+  --background: #1e1e1e;
+  --background-secondary: #2a2a2a;
+  --background-tertiary: #333333;
+  --foreground: #e5e5e5;
+  --foreground-secondary: #b8b8b8;
+  --dark-grey: #404040;
+  --border-color: #404040;
+  --accent-blue: #4a90e2;
 }
 
 html,
@@ -35,14 +40,14 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: light;
+    color-scheme: dark;
   }
 }
 
 @keyframes flashColor {
   0%,
   100% {
-    background-color: #5a67d8;
+    background-color: var(--accent-blue);
   }
   50% {
     background-color: var(--dark-grey);
@@ -51,4 +56,28 @@ a {
 
 .flash-effect {
   animation: flashColor 2s infinite;
+}
+
+.bg-primary {
+  background-color: var(--background);
+}
+
+.bg-secondary {
+  background-color: var(--background-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--background-tertiary);
+}
+
+.text-primary {
+  color: var(--foreground);
+}
+
+.text-secondary {
+  color: var(--foreground-secondary);
+}
+
+.border-primary {
+  border-color: var(--border-color);
 }

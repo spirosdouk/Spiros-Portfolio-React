@@ -8,7 +8,10 @@ const ProjectsSection = () => {
   const { projects } = useProjects();
 
   return (
-    <section id="projects" className="text-white px-4 lg:px-12 pt-14 lg:pt-18">
+    <section
+      id="projects"
+      className="text-primary px-4 lg:px-12 pt-14 lg:pt-18"
+    >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl lg:text-3xl font-bold text-center lg:py-4 ">
           Some Of My Projects

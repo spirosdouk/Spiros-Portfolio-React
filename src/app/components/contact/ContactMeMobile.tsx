@@ -15,10 +15,10 @@ const ContactFormSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="lg:hidden mx-auto max-w-7xl text-white flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 py-14 lg:py-24 space-y-8 lg:space-y-0"
+      className="lg:hidden mx-auto max-w-7xl text-primary flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 py-14 lg:py-24 space-y-8 lg:space-y-0"
     >
       <div className="max-w-lg w-full lg:w-1/2">
-        <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+        <h2 className="text-2xl lg:text-4xl font-bold text-primary mb-6">
           Get in Touch
         </h2>
         <p className="text-gray-300 mb-8">
@@ -28,7 +28,7 @@ const ContactFormSection: React.FC = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-light-secondary mb-1">
               Email Address
               <input
                 id="email"
@@ -36,7 +36,7 @@ const ContactFormSection: React.FC = () => {
                 name="email"
                 autoComplete="on"
                 required
-                className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
               />
             </label>
             <ValidationError
@@ -48,14 +48,14 @@ const ContactFormSection: React.FC = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-light-secondary mb-1">
               Message
               <textarea
                 id="message"
                 name="message"
                 autoComplete="on"
                 required
-                className="block w-full p-2 mt-1 border border-gray-700 bg-gray-800 text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
                 rows={4}
               ></textarea>
             </label>

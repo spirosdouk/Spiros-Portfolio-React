@@ -37,14 +37,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             href={liveDemoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition text-sm font-medium" // Added font-medium
+            className="bg-accent-blue text-primary px-4 py-2 rounded-lg hover:bg-accent-blue-hover transition text-sm font-medium"
           >
             Live Demo
           </a>
         ) : (
-          <span
-            className="bg-gray-500 text-white px-4 py-2 rounded-lg cursor-not-allowed opacity-60 text-sm font-medium" // Adjusted opacity
-          >
+          <span className="bg-dark-accent text-light-secondary px-4 py-2 rounded-lg cursor-not-allowed opacity-60 text-sm font-medium">
             Live Demo
           </span>
         )}
@@ -52,7 +50,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition text-sm font-medium" // Added font-medium
+          className="bg-dark-secondary text-primary px-4 py-2 rounded-lg hover:bg-dark-tertiary transition text-sm font-medium"
         >
           GitHub
         </a>

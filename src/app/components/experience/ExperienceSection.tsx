@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className=" text-white  px-4">
+    <section id="experience" className=" text-primary  px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl lg:text-3xl font-bold text-center lg:py-4 ">
           Experience
