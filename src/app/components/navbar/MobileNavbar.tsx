@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Logo from "../shared/logo";
 
-const MobileNavbar = () => {
+export default function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,8 +26,11 @@ const MobileNavbar = () => {
       <div className="relative flex items-center justify-between h-16">
         <Logo />
         <button
+          type="button"
           onClick={toggleMenu}
-          className="text-gray-400 hover:text-white focus:outline-none mr-10"
+          className="text-gray-300 hover:text-white focus:outline-none mr-10"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
         >
           <svg
             className="h-6 w-6"
@@ -77,6 +80,4 @@ const MobileNavbar = () => {
       )}
     </nav>
   );
-};
-
-export default MobileNavbar;
+}

@@ -19,8 +19,18 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pages/index.js", "src/app/components/coursesSection.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mjs",
+    "postcss.config.mjs",
+    ".next/types/**/*.ts",
+    "src/app/pages/index.js",
+    "src/app/components/coursesSection.jsx"
+  ],
   "exclude": ["node_modules"]
 }

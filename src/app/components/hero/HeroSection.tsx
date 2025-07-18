@@ -3,7 +3,7 @@ import Image from "next/image";
 import PreviewModal from "./PreviewModals";
 import ProfileImage from "./Profileimage";
 
-const HeroSection = () => {
+export default function HeroSection() {
   const documentUrl = "/assets/Resume-SpyrosDoukeris.pdf";
 
   return (
@@ -19,14 +19,14 @@ const HeroSection = () => {
               <h2 className="text-gray-200 text-xl lg:text-2xl font-semibold">
                 Spiros Doukeris
               </h2>
-              <h3 className="text-sm font-normal lg:text-xl mb-4 text-gray-400 dark:text-gray-500">
+              <h3 className="text-sm font-normal lg:text-xl mb-4 text-gray-600 dark:text-gray-300">
                 Computer Science Under-Graduate
               </h3>
             </div>
 
             <div className="flex justify-center space-x-4">
               <a
-                href="https://www.linkedin.com/in/spyros-doukeris-856bb7288/"
+                href="https://www.linkedin.com/in/spyros-doukeris"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -54,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         <div className="max-w-lg">
-          <h1 className="text-2xl lg:text-4xl font-bold leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
             Hey, I&apos;m an aspiring Frontend Developer.
           </h1>
           <p className="mt-2 text-gray-300">
@@ -62,7 +62,10 @@ const HeroSection = () => {
             for web development.
           </p>
           <div className="flex items-center space-x-4 mt-12">
-            <button className="bg-white text-gray-900 rounded-full px-3 py-1.5 text-sm lg:px-6 lg:py-2 lg:text-base font-semibold hover:bg-gray-200 transition duration-300">
+            <button
+              type="button"
+              className="bg-white text-gray-900 rounded-full px-3 py-1.5 text-sm lg:px-6 lg:py-2 lg:text-base font-semibold hover:bg-gray-200 transition duration-300"
+            >
               <a
                 href="/assets/Resume-SpyrosDoukeris.pdf"
                 download="Resume-SpyrosDoukeris.pdf"
@@ -88,7 +91,7 @@ const HeroSection = () => {
             <p className="text-primary text-lg font-semibold">
               Spiros Doukeris
             </p>
-            <h3 className="text-sm font-normal lg:text-lg mb-4 text-gray-400 dark:text-gray-500">
+            <h3 className="text-sm font-normal lg:text-lg mb-4 text-gray-600 dark:text-gray-300">
               Computer Science Under-Graduate
             </h3>
             <div className="flex justify-center space-x-4 mt-2">
@@ -122,6 +125,4 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}

@@ -1,12 +1,58 @@
+import React from "react";
 import { Metadata } from "next";
-import ContactFormSection from "./components/contact/ContactMeMobile";
-import CoursesSection from "./components/courses/CoursesSection";
-import ExperienceSection from "./components/experience/ExperienceSection";
-import HeroSection from "./components/hero/HeroSection";
+import dynamic from "next/dynamic";
 import DesktopNavbar from "./components/navbar/DesktopNavbar";
 import MobileNavbar from "./components/navbar/MobileNavbar";
-import ProjectSection from "./components/projects/ProjectSection";
 import StructuredData from "./components/StructuredData";
+import HeroSection from "./components/hero/HeroSection";
+
+const ExperienceSection = dynamic(
+  () => import("./components/experience/ExperienceSection"),
+  {
+    loading: () => (
+      <div className="min-h-[300px] flex items-center justify-center">
+        Loading experience...
+      </div>
+    ),
+    ssr: true,
+  },
+);
+
+const ProjectSection = dynamic(
+  () => import("./components/projects/ProjectSection"),
+  {
+    loading: () => (
+      <div className="min-h-[300px] flex items-center justify-center">
+        Loading projects...
+      </div>
+    ),
+    ssr: true,
+  },
+);
+
+const CoursesSection = dynamic(
+  () => import("./components/courses/CoursesSection"),
+  {
+    loading: () => (
+      <div className="min-h-[200px] flex items-center justify-center">
+        Loading courses...
+      </div>
+    ),
+    ssr: true,
+  },
+);
+
+const ContactFormSection = dynamic(
+  () => import("./components/contact/ContactMeMobile"),
+  {
+    loading: () => (
+      <div className="min-h-[200px] flex items-center justify-center">
+        Loading contact form...
+      </div>
+    ),
+    ssr: true,
+  },
+);
 
 export const metadata: Metadata = {
   title: "Spiros Doukeris - Frontend Developer Portfolio",

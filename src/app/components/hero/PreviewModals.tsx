@@ -22,7 +22,7 @@ interface PreviewModalProps {
   document: string | undefined;
 }
 
-const PreviewModal = ({ document }: PreviewModalProps) => {
+export default function PreviewModal({ document }: PreviewModalProps) {
   const [open, setOpen] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
 
@@ -81,12 +81,10 @@ const PreviewModal = ({ document }: PreviewModalProps) => {
               width="100%"
               height="100%"
               style={{ border: "none" }}
-            ></iframe>
+            />
           )}
         </Box>
       </Modal>
     </>
   );
-};
-
-export default PreviewModal;
+}

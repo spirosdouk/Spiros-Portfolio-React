@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CoursesSection = () => {
+export default function CoursesSection() {
   return (
     <section id="courses" className="text-primary px-4 lg:px-12 pt-14 lg:pt-18">
       <div className="max-w-5xl mx-auto">
@@ -10,7 +10,7 @@ const CoursesSection = () => {
         </h2>
         <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700 ">
           <li className="mb-10 ml-4 flex">
-            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/codewithmosh_logo.png"
               alt="Company Logo"
@@ -19,7 +19,7 @@ const CoursesSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
+              <p className="text-sm font-normal text-gray-600 dark:text-gray-300">
                 Code With Mosh
               </p>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -28,7 +28,7 @@ const CoursesSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/codewithmosh_logo.png"
               alt="Company Logo"
@@ -37,7 +37,7 @@ const CoursesSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
+              <p className="text-sm font-normal text-gray-600 dark:text-gray-300">
                 Code With Mosh
               </p>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -46,7 +46,7 @@ const CoursesSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/codewithmosh_logo.png"
               alt="Company Logo"
@@ -55,7 +55,7 @@ const CoursesSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
+              <p className="text-sm font-normal text-gray-600 dark:text-gray-300">
                 Code With Mosh
               </p>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -64,7 +64,7 @@ const CoursesSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <div className="flex items-center">
               <div className="w-12 h-12  rounded-full flex items-center justify-center mr-4">
                 <svg
@@ -83,7 +83,7 @@ const CoursesSection = () => {
                 </svg>
               </div>
               <div>
-                <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
+                <p className="text-sm font-normal text-gray-600 dark:text-gray-300">
                   Udemy
                 </p>
                 <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -93,7 +93,7 @@ const CoursesSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/codewithmosh_logo.png"
               alt="Company Logo"
@@ -102,7 +102,7 @@ const CoursesSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <p className="text-sm font-normal text-gray-400 dark:text-gray-500">
+              <p className="text-sm font-normal text-gray-600 dark:text-gray-300">
                 Code With Mosh
               </p>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -114,6 +114,4 @@ const CoursesSection = () => {
       </div>
     </section>
   );
-};
-
-export default CoursesSection;
+}

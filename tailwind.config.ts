@@ -24,8 +24,8 @@ const config: Config = {
           muted: "#9a9a9a",
         },
         accent: {
-          blue: "#4a90e2",
-          "blue-hover": "#3a7bd5",
+          blue: "#2563eb",
+          "blue-hover": "#1d4ed8",
         },
       },
       backgroundColor: {

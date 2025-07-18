@@ -1,10 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import Logo from "../shared/logo";
-import ContactFormModal from "../contact/ContactMeDesktop";
 
-const Navbar = () => {
+const ContactFormModal = dynamic(() => import("../contact/ContactMeDesktop"), {
+  ssr: false,
+});
+
+export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -27,7 +31,7 @@ const Navbar = () => {
                 <a
                   href={`#${link}`}
                   key={link}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {link.charAt(0).toUpperCase() + link.slice(1)}
                 </a>
@@ -37,8 +41,9 @@ const Navbar = () => {
 
           <div className="flex-initial">
             <button
+              type="button"
               onClick={toggleModal}
-              className="text-white bg-blue-950 hover:bg-blue-950 font-medium py-2 px-4 rounded-lg"
+              className="text-white bg-blue-950 hover:bg-blue-900 font-medium py-2 px-4 rounded-lg transition-colors"
             >
               Contact Me
             </button>
@@ -50,6 +55,4 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
-
-export default Navbar;
+}

@@ -1,14 +1,55 @@
 "use client";
 
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React, { useState } from "react";
 
-const ContactFormSection: React.FC = () => {
-  const [state, handleSubmit] = useForm("mblreqgq");
+function ContactFormSection() {
+  const [formData, setFormData] = useState({ email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  if (state.succeeded) {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mblreqgq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ email: "", message: "" });
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  if (isSubmitted) {
     return (
-      <p className="text-center text-green-500">Thanks for your message!</p>
+      <section
+        id="contact"
+        className="lg:hidden mx-auto max-w-7xl text-primary flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 py-14 lg:py-24 space-y-8 lg:space-y-0"
+      >
+        <div className="max-w-lg w-full lg:w-1/2">
+          <p className="text-center text-green-500 text-lg">
+            Thanks for your message!
+          </p>
+        </div>
+      </section>
     );
   }
 
@@ -28,58 +69,56 @@ const ContactFormSection: React.FC = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-light-secondary mb-1">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-light-secondary mb-1"
+            >
               Email Address
-              <input
-                id="email"
-                type="email"
-                name="email"
-                autoComplete="on"
-                required
-                className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
-              />
             </label>
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-              className="text-red-500 mt-2"
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              autoComplete="email"
+              required
+              className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-light-secondary mb-1">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-light-secondary mb-1"
+            >
               Message
-              <textarea
-                id="message"
-                name="message"
-                autoComplete="on"
-                required
-                className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
-                rows={4}
-              ></textarea>
             </label>
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-              className="text-red-500 mt-2"
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              autoComplete="off"
+              required
+              className="block w-full p-2 mt-1 border border-primary bg-dark-secondary text-primary rounded-md shadow-sm focus:ring-accent-blue focus:border-accent-blue"
+              rows={4}
             />
           </div>
 
           <div className="flex items-center space-x-4">
             <button
               type="submit"
-              disabled={state.submitting}
-              className="bg-white text-gray-900 rounded-full px-3 py-1.5 text-sm lg:px-6 lg:py-2 lg:text-base font-semibold hover:bg-gray-200 transition duration-300"
+              disabled={isSubmitting}
+              className="bg-white text-gray-900 rounded-full px-3 py-1.5 text-sm lg:px-6 lg:py-2 lg:text-base font-semibold hover:bg-gray-200 transition duration-300 disabled:opacity-50"
             >
-              Submit
+              {isSubmitting ? "Sending..." : "Submit"}
             </button>
           </div>
         </form>
       </div>
     </section>
   );
-};
+}
 
 export default ContactFormSection;

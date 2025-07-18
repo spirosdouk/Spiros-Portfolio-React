@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const ExperienceSection = () => {
+export default function ExperienceSection() {
   return (
     <section id="experience" className=" text-primary  px-4">
       <div className="max-w-5xl mx-auto">
@@ -10,7 +10,7 @@ const ExperienceSection = () => {
         </h2>
         <ol className="pt-12 relative border-l border-gray-200 dark:border-gray-700">
           <li className="mb-10 ml-4 flex">
-            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/logicea_logo.png"
               alt="Company Logo"
@@ -19,7 +19,7 @@ const ExperienceSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-300">
                 September 2024 - Currently
               </time>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="flash-effect absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/forth_logo.png"
               alt="Company Logo"
@@ -40,7 +40,7 @@ const ExperienceSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-300">
                 October 2024 - July 2025
               </time>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/logicea_logo.png"
               alt="Company Logo"
@@ -64,7 +64,7 @@ const ExperienceSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-300">
                 June 2024 - October 2024
               </time>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -76,7 +76,7 @@ const ExperienceSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/uoc_logo.png"
               alt="Company Logo"
@@ -85,7 +85,7 @@ const ExperienceSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-300">
                 September 2021 - September 2025
               </time>
               <h3 className="text-sm lg:text-lg font-semibold dark:text-white">
@@ -99,7 +99,7 @@ const ExperienceSection = () => {
             </div>
           </li>
           <li className="mb-10 ml-4 flex">
-            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
+            <div className="absolute w-3 h-3 dark:bg-gray-700 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900" />
             <Image
               src="/images/forth_logo.png"
               alt="Company Logo"
@@ -108,7 +108,7 @@ const ExperienceSection = () => {
               className="w-12 h-12 mt-1 mr-4"
             />
             <div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-300">
                 June 2023 - July 2023
               </time>
               <h3 className="text-sm lg:text-lg font-semibold  dark:text-white">
@@ -125,6 +125,4 @@ const ExperienceSection = () => {
       </div>
     </section>
   );
-};
-
-export default ExperienceSection;
+}

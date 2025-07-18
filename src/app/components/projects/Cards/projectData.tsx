@@ -1,11 +1,12 @@
 import React from "react";
 import { FaAngular, FaBootstrap, FaReact, FaUnity } from "react-icons/fa";
+/* eslint-disable-next-line react/no-danger */
 import {
   SiTypescript,
   SiNextdotjs,
   SiChakraui,
   SiVercel,
-  SiCsharp,
+  SiC,
 } from "react-icons/si";
 
 export type TechKey =
@@ -32,7 +33,7 @@ export const techIconComponents: Record<TechKey, JSX.Element> = {
   ),
   nextjs: <SiNextdotjs className="h-6 w-6 text-gray-800" title="Next.js" />,
   unity: <FaUnity className="h-6 w-6 white-purple-500" title="Unity" />,
-  csharp: <SiCsharp className="h-6 w-6 text-purple-700" title="C#" />,
+  csharp: <SiC className="h-6 w-6 text-purple-700" title="C#" />,
 };
 
 export interface Project {
